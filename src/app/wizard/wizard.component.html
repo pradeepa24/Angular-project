@@ -1,0 +1,40 @@
+<mat-toolbar class="headerContent">
+    <mat-toolbar-row>
+      <span >SHIPPING LABEL MAKER</span>
+    </mat-toolbar-row>
+</mat-toolbar>
+<div style="text-align:center">
+      <button class="logout" (click)="logout()">
+        Logout
+      </button>
+      <br>
+      <br>
+      <br>
+      <div *ngFor="let step1 of stepList" style="display:inline-block;margin-left:5%;text-align:center">
+          <ul><li style="list-style-type:none"><button [disabled]="!step1.visited" [ngClass]="{steps: !step1.active, activeLink: step1.active}"  (click)="onStep(step1)" [routerLink]='step1.routeId'>{{step1.step}}</button></li></ul>
+      </div>
+      <router-outlet></router-outlet>
+<!-- <mat-horizontal-stepper [linear]="!isLinear" #stepper >
+    <mat-step [stepControl]="senderForm" >
+        <app-get-sender-address [senderForm]="senderForm" (processedData) = "receiveSenderDetails($event)" ></app-get-sender-address> 
+    </mat-step>
+     <mat-step [stepControl]="receiverForm" >
+            <app-get-receiver-address [receiverForm] = "receiverForm" (processedDataFromStep2) = "receiveReceiverDetails($event)"></app-get-receiver-address>
+        </mat-step>
+    <mat-step [stepControl]="weightForm" >
+            <app-get-weight [weightForm] = "weightForm" (processedDataFromStep3) = "receiveWeightDetails($event)"></app-get-weight>
+    </mat-step>
+    <mat-step [stepControl]="shippingOptionForm" >
+        <app-get-shipping-option [shippingOptionForm] = "shippingOptionForm" (processedDataFromStep4) = "receiveShippingDetails($event)"></app-get-shipping-option>
+        
+    </mat-step>
+    <mat-step>
+        <app-confirm (processedDataFromStep5) = "receiveConfirmation($event)"></app-confirm>
+    </mat-step> 
+</mat-horizontal-stepper> -->
+
+<!-- <mat-toolbar class="footerContent">
+    <mat-toolbar-row fxLayout="row">
+    </mat-toolbar-row>
+</mat-toolbar> -->
+</div>

@@ -1,0 +1,54 @@
+button.logout{
+    float: right;
+    background: rgb(12, 11, 11);
+    border-color: transparent;
+    color: #fff;
+    cursor: pointer;
+    height: 40px;
+    width: 90px;
+    position: relative;
+    top: 10px;
+    border: 2px solid white;
+    font-size: 14px;
+}
+button.steps {
+    //background: rgb(226, 10, 21);
+    border-color: transparent;
+    //color: #fff;
+    cursor: pointer;
+    height: 40px;
+    width: 50px;
+    position: relative;
+    top: 10px;
+    border: 2px solid black;
+    font-size: 14px;
+    border-radius: 50%;  
+}
+button.activeLink {
+    background: rgb(12, 77, 129);
+    border-color: transparent;
+    color:black;
+    cursor: pointer;
+    height: 40px;
+    width: 50px;
+    position: relative;
+    top: 10px;
+    border: 2px solid white;
+    font-size: 14px; 
+    border-radius: 50%; 
+}
+.headerContent{
+    position: fixed;
+    font-size: 24px;
+    background-color:rgb(12, 77, 129);
+    color: white;
+    span {
+        float:left;
+    }
+}
+.footerContent{
+    position: fixed;
+    bottom: 0;
+    background-color: rgb(15, 66, 107);
+ 
+}

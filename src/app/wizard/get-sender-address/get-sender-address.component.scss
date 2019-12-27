@@ -1,0 +1,112 @@
+
+/* 'Open Sans' font from Google Fonts */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+
+
+.senderAddress {
+  width: 650px;
+  margin: 16px auto;
+  font-size: 16px;
+  button {
+    background: rgb(12, 11, 11);
+    border-color: transparent;
+    color: #fff;
+    cursor: pointer;
+    height: 40px;
+    width: 90px;
+    border: 2px solid white;
+    font-size: 14px; 
+  }
+  label {
+    float: left;
+    position: relative;
+    left:15px;
+    span{
+      color:red;
+    }
+  }
+}
+
+.senderAddress-header,
+.senderAddress p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.senderAddress-triangle {
+  width: 0;
+  margin-right: auto;
+  margin-left: auto;
+  border: 12px solid transparent;
+  border-bottom-color: rgb(15, 66, 107);
+}
+
+.senderAddress-header {
+  background: rgb(12, 77, 129);
+  padding: 20px;
+  font-size: 1.4em;
+  font-weight: normal;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.senderAddress-container {
+  background: #ebebeb;
+  padding: 12px;
+}
+
+.senderAddress p {
+  padding: 12px;
+}
+
+.senderAddress input {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  border-width: 1px;
+  border-style: solid;
+  padding: 16px;
+  outline: 0;
+  font-family: inherit;
+  font-size: 0.95em;
+}
+
+.senderAddress input[type="text"],
+.senderAddress input[type="password"] {
+  background: #fff;
+  border-color: #bbb;
+  color: #555;
+}
+.senderAddress input::placeholder {
+font-size: 12px;
+}
+.senderAddress input[type="text"]:focus,
+.senderAddress input[type="password"]:focus {
+  border-color: #888;
+}
+
+.senderAddress input[type="submit"] {
+  background: rgb(1, 29, 51);
+  border-color: transparent;
+  color: #fff;
+  cursor: pointer;
+}
+
+.senderAddress input[type="submit"]:hover {
+  background: #17c;
+}
+
+.senderAddress input[type="submit"]:focus {
+  border-color: #05a;
+}
+
+.has-error input[type="text"]
+ {
+    border-color: rgb(216, 12, 12);
+    // color: rgb(230, 14, 14);
+}
+.errorNote {
+  color: rgb(230, 14, 14);
+  font-size:12px;
+}

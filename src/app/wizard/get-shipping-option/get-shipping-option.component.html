@@ -1,0 +1,17 @@
+<div class="shippingOption">
+        <h2 class="shippingOption-header">Enter the shipping option</h2>
+        <form [formGroup]="shippingOptionForm" class="shippingOption-container">
+            <!-- matStepLabel -->
+            <ng-template >Shipping Option Form</ng-template>
+            <label for="ShippingOption">Shipping Options <span>*</span></label>
+          <p >
+              <input type="radio" formControlName= "ShippingOption" name="ShippingOption" value="1"> Ground
+              <input type="radio" formControlName= "ShippingOption" name="ShippingOption" value="2"> Priority
+              </p>
+              <!-- mat-raised-button matStepperPrevious
+              mat-raised-button matStepperNext -->
+          <button  (click)=" onAction(WizardAction.Prev)">PREV</button>
+          <button  (click)=" onAction(WizardAction.Next)" [disabled] = "shippingOptionForm.invalid">NEXT</button>
+        </form>
+      </div>
+      

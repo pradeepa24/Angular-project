@@ -1,0 +1,12 @@
+<!-- matStepLabel -->
+<ng-template >Done</ng-template>
+<div class="confirm">
+        <h2 class="confirm-header">Confirmation</h2>
+        <div class="confirm-container">
+        <p>Please Confirm that the details entered are correct to proceed with preparing the Shipping Label</p>
+        <!-- mat-raised-button matStepperPrevious
+        mat-raised-button -->
+        <button (click)="onAction(WizardAction.Prev)">PREV</button>
+        <button (click) = "onAction(WizardAction.End)">CONFIRM</button>
+    </div>
+</div>

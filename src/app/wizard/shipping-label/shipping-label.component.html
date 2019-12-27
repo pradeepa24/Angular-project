@@ -1,0 +1,50 @@
+
+<div class="label">
+        <h2 style="text-align:center">SHIPPING LABEL</h2>
+        <br>
+        <br>
+        <br>
+        <div class="label-header">
+            <div class="label-from">
+                <strong>From</strong>
+                <div class="address-container">
+                <address class="m-t-5 m-b-5">
+                    <strong>{{data.from.Name | uppercase}}</strong>
+                    <br>
+                    Street: {{data.from.Street}}
+                    <br>
+                    City: {{data.from.City}}
+                    <br>
+                    State: {{data.from.State}}
+                    <br>
+                    Zip: {{data.from.Zip}}
+                </address>
+            </div>
+            </div>
+            <div class="label-to">
+                <strong>To</strong>
+                <div class="address-container">
+                <address class="m-t-5 m-b-5">
+                    <strong>{{data.to.Name | uppercase}}</strong>
+                    <br>
+                    Street: {{data.to.Street}}
+                    <br>
+                    City: {{data.to.City}}
+                    <br>
+                    State: {{data.to.State}}
+                    <br>
+                    Zip: {{data.to.Zip}}
+                </address>
+            </div>
+            </div>
+            <div class="label-date">
+                <strong>Invoice period</strong>
+                <div id="invoice_date" class="date m-t-5">Weight: {{data.weight.Weight}}</div>
+                <div id="invoice_id" class="label-detail">Shipping Cost: ${{shippingCost}}</div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <button (click)="reset()">RESET</button>
+    </div>

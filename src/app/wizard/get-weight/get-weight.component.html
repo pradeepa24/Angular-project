@@ -1,0 +1,22 @@
+<div class="weight">
+        <h2 class="weight-header">Enter the Weight</h2>
+        <form [formGroup]="weightForm" class="weight-container">
+            <!-- matStepLabel -->
+            <ng-template >Weight Form</ng-template>
+            <label for="weight">Weight<span>*</span></label>
+            <span class="errorNote" *ngIf="hasError('Weight', 'required')">Weight is required</span>
+          <p [ngClass]="{ 'has-error': hasError('Weight', 'required')} ">
+            <input
+              type="number"
+              placeholder="Enter Weight"
+              formControlName="Weight"
+              name="weight"
+            />
+          </p>
+          <!-- mat-raised-button matStepperPrevious
+          mat-raised-button matStepperNext -->
+          <button  (click)="onAction(WizardAction.Prev)">PREV</button>
+          <button  (click)="onAction(WizardAction.Next)" [disabled] = "weightForm.invalid">NEXT</button>
+        </form>
+      </div>
+      

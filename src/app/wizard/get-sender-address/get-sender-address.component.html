@@ -1,0 +1,49 @@
+
+<div class="senderAddress">
+  <h2 class="senderAddress-header">Enter the Sender's Address</h2>
+  <form [formGroup]="senderForm" class="senderAddress-container">
+      <!-- matStepLabel -->
+      <ng-template >Sender Form</ng-template>
+      <label for="name">Name <span>*</span></label>
+            <span class="errorNote" *ngIf="hasError('Name', 'required')">Name is required</span>
+            <span class="errorNote" *ngIf="hasError('Name', 'minlength')">Full Name should be more than 5 letters long</span>
+            <!-- <span class="errorNote" *ngIf="hasError('Name', 'required')">Name is required</span> -->
+            <p [ngClass]="{ 'has-error': hasError('Name', 'required') || hasError('Name', 'minlength') }">
+              <input
+                type="text"
+                placeholder="Enter Full Name"
+                formControlName="Name"
+                name="name"
+              />
+            </p>
+          
+            <label>Street <span>*</span></label>
+            <span class="errorNote" *ngIf="hasError('Street', 'required')">Street is required</span>
+            <p [ngClass]="{ 'has-error': hasError('Street', 'required') }">
+              <input type="text" placeholder="Enter Street" formControlName="Street" />
+            </p>
+            
+            <label>City <span>*</span></label>
+            <span class="errorNote" *ngIf="hasError('City', 'required')">City is required</span>
+            <span class="errorNote" *ngIf="hasError('City', 'minlength')">City should be atleast 5 letters long</span>
+            <p [ngClass]="{ 'has-error': hasError('City', 'required') || hasError('City', 'minlength')}">
+              <input type="text" placeholder="Enter City" formControlName="City" />
+            </p>
+            
+            <label>State <span>*</span></label>
+            <span class="errorNote" *ngIf="hasError('State', 'required')">State is required</span>
+            <p [ngClass]="{ 'has-error': hasError('State', 'required') }">
+              <input type="text" placeholder="Enter State" formControlName="State" />
+            </p>
+            
+            <label>Zip <span>*</span></label>
+            <span class="errorNote" *ngIf="hasError('Zip', 'required')">Zip is required</span>
+            <span class="errorNote" *ngIf="hasError('Zip', 'minlength')">Zip should be in 5 digits</span>
+            <p [ngClass]="{ 'has-error': hasError('Zip', 'required') || hasError('Zip', 'minlength') }">
+              <input type="text" placeholder="Enter Zip" formControlName="Zip" />
+            </p>
+            <!-- mat-raised-button matStepperNext -->
+    <button 
+       (click)="action(WizardAction.Next)" [disabled]="senderForm.invalid" >NEXT</button>
+  </form>
+</div>

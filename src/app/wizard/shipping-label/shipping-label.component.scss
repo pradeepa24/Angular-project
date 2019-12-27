@@ -1,0 +1,56 @@
+.label {
+    padding: 0px !important;
+    background: #fff;
+    
+    button {
+        background: rgb(12, 11, 11);
+        border-color: transparent;
+        color: #fff;
+        cursor: pointer;
+        height: 40px;
+        width: 90px;
+        border: 2px solid white;
+        font-size: 14px; 
+    }
+    .label-header {
+        margin: 0 -20px;
+        background: #f0f3f4;
+        padding: 20px;
+    }
+    .label-from {
+        display: table-cell;
+        width: 1%;
+        padding-right: 20px;
+        div.addressContainer {
+            position:relative;
+            left:3px;
+        }
+    }
+     .label-to {
+        display: table-cell;
+        width: 1%;
+        padding-right: 20px;
+        div.addressContainer {
+            position:relative;
+            left:3px;
+        }
+     }
+     .label-date {
+        display: table-cell;
+        width: 1%;
+        text-align: right;
+   padding-left: 20px;
+
+     }
+     .m-t-5 {
+        margin-top: 5px !important;
+    }
+    .m-b-5 {
+        margin-bottom: 5px !important;
+    }
+    
+}
+
+
+
+

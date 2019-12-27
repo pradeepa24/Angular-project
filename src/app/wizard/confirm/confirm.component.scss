@@ -1,0 +1,40 @@
+/* 'Open Sans' font from Google Fonts */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+
+
+.confirm {
+  width: 650px;
+  margin: 16px auto;
+  font-size: 16px;
+  .confirm-header {
+    margin-top: 0;
+    margin-bottom: 0;
+    background: rgb(12, 77, 129);
+  padding: 20px;
+  font-size: 1.4em;
+  font-weight: normal;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  }
+  .confirm-container {
+    background: #ebebeb;
+    padding: 12px;
+  p{
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 12px;   
+  }
+  button {
+    background: rgb(12, 11, 11);
+    border-color: transparent;
+    color: #fff;
+    cursor: pointer;
+    height: 40px;
+    width: 90px;
+    border: 2px solid white;
+    font-size: 14px; 
+  }
+}
+  
+}
