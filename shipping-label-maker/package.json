@@ -1,13 +1,15 @@
 {
   "name": "shipping-label-maker",
   "version": "0.0.0",
+  "homepage": "https://pradeepa24.github.io/Angular-project/",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "deploy": "gh-pages -d build"
   },
   "private": true,
   "dependencies": {
@@ -35,6 +37,7 @@
     "@types/jasminewd2": "~2.0.3",
     "@types/node": "~8.9.4",
     "codelyzer": "^5.0.0",
+    "gh-pages": "^2.1.1",
     "hammerjs": "^2.0.8",
     "jasmine-core": "~3.4.0",
     "jasmine-spec-reporter": "~4.2.1",
