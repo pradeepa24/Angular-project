@@ -1,6 +1,14 @@
+.wizard-content{
+    height:100vh;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: space-around;
+    // align-items: center;
+}
+
 button.logout{
     float: right;
-    background: rgb(12, 11, 11);
+    background: transparent;
     border-color: transparent;
     color: #fff;
     cursor: pointer;
@@ -8,8 +16,12 @@ button.logout{
     width: 90px;
     position: relative;
     top: 10px;
-    border: 2px solid white;
+    // border: 2px solid white;
     font-size: 14px;
+}
+button.logout:hover{
+    font-size:16px;
+    font-weight:bold;
 }
 button.steps {
     //background: rgb(226, 10, 21);
@@ -42,9 +54,15 @@ button.activeLink {
     font-size: 24px;
     background-color:rgb(12, 77, 129);
     color: white;
-    span {
-        float:left;
-    }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // span {
+    //     float:left;
+    // }
+    // div{
+    //     float:right;
+    // }
 }
 .footerContent{
     position: fixed;
@@ -52,3 +70,56 @@ button.activeLink {
     background-color: rgb(15, 66, 107);
  
 }
+mat-toolbar-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding:40px;
+   button{
+       height:5vh;
+       padding-bottom:30px;
+   }
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding-top:100px;
+}
+.steps{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;  
+}
+.steps-section{
+    // display:flex;
+    // flex-direction: row;
+    // justify-content: space-around;
+    // align-items: center;
+    // margin-left:5%;
+    // text-align:center;
+    padding:35px;
+}
+@media only screen and (max-width : 650px) {
+    .steps-section{
+        padding:25px;
+    }
+    mat-toolbar-row{
+        justify-content: space-between;
+        padding:0 10px;
+    }
+  }
+  @media only screen and (max-width : 550px) {
+    .steps-section{
+        padding:15px;
+    }
+  }
+  @media only screen and (max-width : 460px) {
+    .steps-section{
+        padding:5px;
+    }
+   
+  }

@@ -4,15 +4,21 @@
 
 
 .login {
-  width: 400px;
-  margin: 16px auto;
+  width: 100%;
+  // margin: 16px auto;
   font-size: 16px;
+  height:100vh;
+  background: #ebebeb;
+ 
 }
 
 .login-header,
 .login p {
   margin-top: 0;
   margin-bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .login-triangle {
@@ -34,12 +40,17 @@
 }
 
 .login-container {
-  background: #ebebeb;
+  // background: #ebebeb;
   padding: 12px;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .login p {
   padding: 12px;
+  width: 50vw;
 }
 
 .login input {
@@ -67,14 +78,19 @@
 }
 
 .login input[type="submit"] {
-  background: rgb(1, 29, 51);
+  background: rgb(12, 77, 129);
   border-color: transparent;
   color: #fff;
   cursor: pointer;
+  width:30vw;
+  border-radius:12px;
 }
 
 .login input[type="submit"]:hover {
-  background: #17c;
+  // background: #17c;
+  background-color:  rgb(1, 29, 51);
+  border: solid 2px rgb(1, 29, 51);
+  
 }
 
 .login input[type="submit"]:focus {
